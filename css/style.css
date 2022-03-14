@@ -52,7 +52,8 @@ img{
 	max-height: 85%;
 	width: 100%;
 	border-radius: 50%;
-	border: .25rem solid black;
+	border: .25rem solid #888888;
+  box-shadow: 5px 10px #888888;
 }
 
 .aboutme{
@@ -66,7 +67,7 @@ img{
   grid-row: 1;
 }
 
-.aboutme img{
+.aboutme .daniel{
   grid-column: 2/6;
   grid-row: 2;
 }
@@ -79,6 +80,37 @@ img{
   box-shadow: 5px 10px #888888;
   padding: 1rem;
 }
+
+.projects h2{
+  width: 100%;
+  text-align: center;
+}
+
+.project1{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  text-align: center;
+}
+
+.project1 h3{
+  grid-column: 2/6;
+  grid-row: 1;
+}
+
+.project1 .project1image{
+  grid-column: 2/6;
+  grid-row: 2;
+}
+
+.project1 p{
+  grid-column: 2/6;
+  grid-row: 3;
+	border-radius: 8px;
+	background-color: #95A99C;
+  box-shadow: 5px 10px #888888;
+  padding: 1rem;
+}
+
 
 @media only screen and (min-width: 600px){
 	button{
@@ -114,14 +146,13 @@ img{
 	header{
 	  display: grid;
 	  grid-template-columns: repeat(10,1fr);
+    padding: 150px 0;
 	}
 	
 	.avatar{
-		grid-column: 8/10;
+		grid-column: 7/10;
 		grid-row: 2/5;
-		padding-top: 2rem;
-		padding-bottom: 2rem;
-		padding-right: 2rem;
+    padding: 1rem;
 	}
 	.welcome{
 		grid-column: 2/6;
@@ -139,6 +170,7 @@ img{
 .aboutme .daniel{
   grid-column: 2/4;
   grid-row: 2/5;
+	padding: 1rem;
 }
 
 .aboutme p{
@@ -150,3 +182,25 @@ img{
   padding: 1rem;
 }
 
+.project1{
+  grid-template-columns: repeat(10,1fr);
+}
+
+.project1 h3{
+  grid-column: 2/10;
+}
+
+.project1 .project1image{
+  grid-column: 7/10;
+  grid-row: 2/5;
+	padding: 1rem;
+}
+
+.project1 p{
+  grid-column: 2/6;
+  grid-row: 2/5;
+	border-radius: 8px;
+	background-color: #95A99C;
+  box-shadow: 5px 10px #888888;
+  padding: 1rem;
+}
