@@ -44,26 +44,26 @@ body {
   margin: 0 auto;
 }
 
-#ham-menu-items a{
+#ham-menu-items a {
   text-align: center;
   margin: 0;
   font-size: 1.5rem;
   color: #FFFFFF;
 }
 
-#hamnav label{
+#hamnav label {
   display: inline-block;
   padding-right: .5rem;
   color: #FFFFFF;
   font-size: 3rem;
 }
 
-#hamnav ul{
+#hamnav ul {
   padding: 0;
   width: 100%;
 }
 
-#hamnav input:checked ~ #ham-menu-items{
+#hamnav input:checked ~ #ham-menu-items {
   display: block;
   margin: 0;
   color: #000000;
@@ -71,11 +71,11 @@ body {
   width: auto;
 }
 
-#hamburger, #ham-menu-items{
+#hamburger, #ham-menu-items {
   display: none;
 }
 
-#hamnav{
+#hamnav {
   text-align: right;
   width: 100%;
   padding: .5rem .5rem .5rem 0;
@@ -252,47 +252,47 @@ header {
   display: none;
 }
 
-.detail h3{
+.detail h3 {
   padding: .5rem 0;
   margin: 0;
 }
 
-.detail p{
+.detail p {
   padding: .5rem 0;
   margin: 0;
 }
 
-main h2{
+main h2 {
   font-size: 3rem;
 }
 
-main h3{
+main h3 {
   font-size: 2rem;
 }
 
-.web-only{
+.web-only {
   display: none;
 }
 
-.aboutme{
+.aboutme {
   scroll-margin-top: 10rem;
 }
 
-.projects{
+.projects {
   scroll-margin-top: 10rem;
 }
 
-.contact{
+.contact {
   scroll-margin-top: 10rem;
 }
 
-.desktop-only{
+.desktop-only {
   display: none;
 }
 
 @media only screen and (min-width: 600px) {
     
-  .desktop-only{
+  .desktop-only {
     display: block;
   }
   
@@ -307,7 +307,7 @@ main h3{
     font-size: 2rem;
   }
   
-  #hamnav label, #hamburger{
+  #hamnav label, #hamburger {
     display: none;
   }
 
@@ -332,13 +332,13 @@ main h3{
     padding: 0.5rem;
   }
   
-  #ham-menu-items a{
+  #ham-menu-items a {
     color: #FFFFFF;
     font-size: 1.5rem;
     padding: 0.5rem;
   }
   
-  #ham-menu-items .bluetext{
+  #ham-menu-items .bluetext {
     color: #01303F;
   }
   
@@ -346,7 +346,7 @@ main h3{
     padding: 0;
   }
   
-  #puzzle{
+  #puzzle {
     font-size: 3rem;
   }
   
@@ -415,7 +415,7 @@ main h3{
     margin: 0;
   }
   
-  .textbox{
+  .textbox {
     font-size: 1.7rem;
   }
 
@@ -497,11 +497,11 @@ main h3{
     margin: 20px auto;
   }
   
-  .aboutme, .projects, .contact{
+  .aboutme, .projects, .contact {
     scroll-margin-top: 6rem;
   }
   
-  .backtotop:hover{
+  .backtotop:hover {
     transform: scale(1.1)
   }
  
