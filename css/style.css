@@ -310,16 +310,9 @@ main h3{
   #hamnav label, #hamburger{
     display: none;
   }
-  
+
   .topbar {
-    position: fixed;
     align-items: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2;
-    background: linear-gradient(90deg, #01303F  80%, #DBE1E1 20%);
-    margin: 0 auto;
     border-bottom: 1px solid #FFFFFF;
     padding: 0;
   }
@@ -334,15 +327,15 @@ main h3{
     display: flex;
     width: 100%;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
-    padding: 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem;
   }
   
   #ham-menu-items a{
     color: #FFFFFF;
     font-size: 1.5rem;
-    padding: 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem;
   }
   
   #ham-menu-items .bluetext{
@@ -356,7 +349,6 @@ main h3{
   #puzzle{
     font-size: 3rem;
   }
-  
   
   header {
     display: grid;
@@ -485,15 +477,15 @@ main h3{
   }
 
   img:hover {
-    transform: scale(1.4);
+    transform: scale(1.3);
   }
 
   .fa-brands:hover {
-    transform: scale(1.4);
+    transform: scale(1.3);
   }
 
   .fa-solid:hover {
-    transform: scale(1.4);
+    transform: scale(1.3);
   }
   
   .downarrow .fa-solid{
@@ -507,6 +499,10 @@ main h3{
   
   .aboutme, .projects, .contact{
     scroll-margin-top: 6rem;
+  }
+  
+  .backtotop:hover{
+    transform: scale(1.1)
   }
  
 @media only screen and (min-width: 1200px) {
@@ -527,3 +523,5 @@ main h3{
     from, to { border-color: transparent }
     70% { border-color: orange; }
   }
+}
+  
