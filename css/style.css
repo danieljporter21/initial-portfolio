@@ -1,6 +1,4 @@
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200&family=Work+Sans&display=swap');
-</style>
 
 * {
   box-sizing: border-box;
@@ -43,7 +41,7 @@ nav {
 }
 
 .logo {
-	margin: auto;
+  margin: auto;
   color: #FFFFFF;
   font-size: 2rem;
 }
@@ -202,7 +200,7 @@ header {
 .contact p {
   text-align: center;
   margin: auto;
-  width:80%;
+  width: 80%;
 }
 
 .contact .icons {
@@ -371,7 +369,7 @@ header {
     border-radius: 50%;
     border: .25rem solid #BDBDBD;
     box-shadow: 1px 5px #BDBDBD;
-    margin: auto 1rem auto auto;
+    margin-right: 1rem;
     height: auto;
     min-height: 80%;
     width: 100%;
@@ -381,29 +379,28 @@ header {
     border-radius: 50%;
     border: .25rem solid #01303F;
     box-shadow: 1px 5px #01303F;
-    margin: auto auto auto 1rem;
+    margin-left: 1rem;
     height: auto;
     min-height: 80%;
     width: 100%;
   }
 
    .welcome h2 {
-    width: 100%;
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
-    animation: typing 3.5s steps(50, end), blink-caret .75s step-end;
+    animation: typing 4.5s steps(50, end), blink-caret .75s step-end;
   }
 
-  @keyframes typing  {
-    from  { width: 0 }
-    to  { width: 90% }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 90% }
   }
 
-  @keyframes blink-caret  {
-    from, to  { border-color: transparent }
-    70%  { border-color: orange; }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    70% { border-color: orange; }
   }
 
   li:hover {
@@ -428,3 +425,7 @@ header {
   }
 }  
 
+@media only screen and (max-width: 800px) {
+  body{
+    font-size: .75rem;
+  }
