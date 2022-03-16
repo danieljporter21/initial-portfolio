@@ -7,7 +7,7 @@
 }
 
 hr {
-  border: 1px solid #DBE1E1 ;
+  border: 1px solid #DBE1E1;
   width: 20%;
   margin: 2rem auto;
 }
@@ -19,21 +19,22 @@ a {
 }
 
 .bluetext {
-  color: #01303f;
+  color: #01303F;
 }
 
 body {
-	background: linear-gradient(90deg, #01303f  80%, #DBE1E1 20%);
-	color: #172A1F;
+  background: linear-gradient(90deg, #01303F  80%, #DBE1E1 20%);
+  color: #172A1F;
   font-family: 'Smooch Sans', sans-serif;
 	font-size: 15px;
+  margin: 0 auto;
 }
 
 nav {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #FFFFFF;
+  margin-bottom: .5rem;
+  border-bottom: .25rem solid #FFFFFF;
 }
 
 .menu {
@@ -43,7 +44,7 @@ nav {
 
 .logo {
 	margin: auto;
-  color: white;
+  color: #FFFFFF;
   font-size: 2rem;
 }
 
@@ -52,15 +53,15 @@ nav {
 }
 
 img {
-	max-height: 80%;
-	border-radius: 50%;
-	border: .25rem solid #01303f;
-  box-shadow: 1px 5px #01303f;
+  max-height: 80%;
+  border-radius: 50%;
+  border: .25rem solid #01303F;
+  box-shadow: 1px 5px #01303F;
 }
 
 .textbox {
-	border-radius: 8px;
-	background-color: #88B3B3;
+  border-radius: 8px;
+  background-color: #88B3B3;
   box-shadow: 5px 10px #000000;
   text-align: center;
   margin-bottom: 5px;
@@ -75,13 +76,13 @@ header {
 }
 
 .avatar {
-	grid-column: 2/6;
-	grid-row: 1;
+  grid-column: 2/6;
+  grid-row: 1;
 }
 
 .welcome {
-	grid-column: 2/6;
-	grid-row: 2/5;
+  grid-column: 2/6;
+  grid-row: 2/5;
 }
 
 .downarrow {
@@ -186,7 +187,7 @@ header {
 }
 
 .contact {
-	background-color: #88B3B3;
+  background-color: #88B3B3;
   display: flex;
   flex-direction: column;
   justify-items: space-evenly;
@@ -194,14 +195,14 @@ header {
 }
 
 .contact h2 {
-margin: auto;
-padding-top: .5rem;
+  margin: auto;
+  padding-top: .5rem;
 }
 
 .contact p {
-text-align: center;
-margin: auto;
-width:80%;
+  text-align: center;
+  margin: auto;
+  width:80%;
 }
 
 .contact .icons {
@@ -215,63 +216,69 @@ width:80%;
 }
 
 .downarrow {
-   display: none;
+  display: none;
 }
 
 @media only screen and (min-width: 600px) {
-  .menu {
-	  display: none;
-  }
-	
-	li {
-	  list-style: none;
-	}
-
-	a {
-		color: #FFFFFF;
-		font-weight: bold;
-		text-decoration: none;
-	}
-	
-	nav {
-		display: flex;
-  	position: fixed;
-  	top: 0;
-  	left: 0;
-  	width: 100%;
-  	z-index: 2;
-	  background: linear-gradient(90deg, #01303f  80%, #DBE1E1 20%);
-	}
-
-	.Navbar {
-	  display: flex;
-		justify-content: space-evenly;
-		width: 48%;
-		padding: 0px;
-	}
-	
-	.logo {
-		width: 52%;
-    padding-left: 1rem;
-	}
-	
-	header {
-	  display: grid;
-	  grid-template-columns: repeat(10,1fr);
-    padding: 20vh 0;
-	}
-	
-	.avatar {
-		grid-column: 7/10;
-		grid-row: 2/6;
-    padding: 1rem;
-    height: 50vh;
-	}
   
-	.welcome {
-		grid-column: 2/6;
-		grid-row: 3;
-    padding: 1rem;
+  .menu {
+    display: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background: linear-gradient(90deg, #01303F  80%, #DBE1E1 20%);
+  }
+
+  .Navbar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 48%;
+    padding: 0px;
+  }
+  
+  .logo {
+    width: 52%;
+    padding-left: 1rem;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    padding: 20vh 0;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .avatar {
+    grid-column: 7/10;
+    grid-row: 2/6;
+    height: auto;
+    width:100%;
+    margin: auto;
+   
+  }
+  
+  .welcome {
+    grid-column: 2/6;
+    grid-row: 3;
+    width: 100%;
+    margin: auto;
   }
 
   .downarrow {
@@ -292,14 +299,12 @@ width:80%;
   .aboutme .daniel {
     grid-column: 2/5;
     grid-row: 2/5;
-	  padding: .5rem;
-    height: 50vh;
   }
 
   .aboutme p {
     grid-column: 6/10;
     grid-row: 3/4;
-	  border-radius: 8px;
+    border-radius: 8px;
     padding: 2rem;
     margin: 0;
   }
@@ -310,16 +315,14 @@ width:80%;
   }
 
   .project1 .project1image {
-    grid-column: 8/10;
+    grid-column: 7/10;
     grid-row: 2/5;
-	  padding: 1rem;
-    height: 50vh;
   }
 
   .project1 .detail {
     grid-column: 2/6;
     grid-row: 3/4;
-	  border-radius: 8px;
+    border-radius: 8px;
     margin: 0;
   }
 
@@ -339,14 +342,12 @@ width:80%;
   .project2 .project2image {
     grid-column: 2/5;
     grid-row: 2/5;
-	  padding: 1rem;
-    height: 50vh;
+    margin-right: 1rem;
   }
 
   .project2 .detail {
     grid-column: 6/10;
-    grid-row: 3/4;
-    margin: 0;
+    grid-row: 3/4;    
   }
 
   .project3 {
@@ -354,29 +355,39 @@ width:80%;
     align-items: stretch;
   }
 
-
   .project3 .project3image {
-    grid-column: 8/10;
+    grid-column: 7/10;
     grid-row: 2/5;
-	  padding: 1rem;
-    height: 50vh;
   }
 
   .project3 .detail {
     grid-column: 2/6;
     grid-row: 3/4;
-	  border-radius: 8px;
+    border-radius: 8px;
     margin: 0;
   }
 
   .imgleft img {
-	  max-height: 80%;
-	  border-radius: 50%;
-	  border: .25rem solid #BDBDBD;
+    border-radius: 50%;
+    border: .25rem solid #BDBDBD;
     box-shadow: 1px 5px #BDBDBD;
+    margin: auto 1rem auto auto;
+    height: auto;
+    min-height: 80%;
+    width: 100%;
+  }
+  
+  .imgright img {
+    border-radius: 50%;
+    border: .25rem solid #01303F;
+    box-shadow: 1px 5px #01303F;
+    margin: auto auto auto 1rem;
+    height: auto;
+    min-height: 80%;
+    width: 100%;
   }
 
- /* .welcome h2 {
+   .welcome h2 {
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
@@ -393,7 +404,7 @@ width:80%;
   @keyframes blink-caret  {
     from, to  { border-color: transparent }
     70%  { border-color: orange; }
-  }*/
+  }
 
   li:hover {
     transform: scale(1.2);
@@ -416,3 +427,4 @@ width:80%;
     margin: 20px auto;
   }
 }  
+
