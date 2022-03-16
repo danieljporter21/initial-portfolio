@@ -14,6 +14,12 @@ a {
   color: white;
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  text-align: center;
 }
 
 .bluetext {
@@ -28,26 +34,48 @@ body {
   margin: 0 auto;
 }
 
-.topbar{
+.topbar {
   display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background: linear-gradient(90deg, #01303F  80%, #DBE1E1 20%);
+  margin: 0 auto;
+  position: fixed;
 }
 
-#ham-menu-items li{
+#ham-menu-items a{
   text-align: center;
+  padding: 1rem .5rem;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #A24031;
 }
 
 #hamnav label{
   display: inline-block;
+  padding-right: .5rem;
   color: #ffffff;
+  font-size: 3rem;
 }
+
+#hamnav ul{
+  padding: 0;
+  width: 100%;
+}
+
 
 #ham-menu-items{
   display: none;
-  flex-direction: column;
 }
 
 #hamnav input:checked ~ #ham-menu-items{
   display: block;
+  margin: 0;
+  color: #000000;
+  padding: 0;
+  width: auto;
 }
 
 #hamburger {
@@ -57,6 +85,7 @@ body {
 #hamnav{
   text-align: right;
   width: 100%;
+  padding-top: 1rem;
 }
 
 .menu {
@@ -67,10 +96,11 @@ body {
 .logo {
   color: #FFFFFF;
   font-size: 2rem;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 img {
+  height: auto;
   max-height: 80%;
   border-radius: 50%;
   border: .25rem solid #01303F;
@@ -83,14 +113,15 @@ img {
   box-shadow: 5px 10px #000000;
   text-align: center;
   margin-bottom: 5px;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 header {
   display: grid;
   grid-template-columns: repeat(6,1fr);
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   justify-items: center;
+  padding-top: 5rem;
 }
 
 .avatar {
@@ -239,11 +270,23 @@ header {
   margin: 0;
 }
 
+main h2{
+  font-size: 3rem;
+}
 
+main h3{
+  font-size: 2rem;
+}
 
+.web-only{
+  display: none;
+}
 @media only screen and (min-width: 600px) {
   
-
+  .desktop-only{
+    display: block;
+  }
+  
   li {
     list-style: none;
   }
@@ -259,21 +302,37 @@ header {
     display: none;
   }
   
+  .topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background: linear-gradient(90deg, #01303F  80%, #DBE1E1 20%);
+    margin: 0 auto;
+    border-bottom: 1px solid #FFFFFF;
+  }
+  
   .logo{
-    padding-right: 40rem;
+    width: 100%;    
   }
   
   #ham-menu-items {
-    margin: auto;
-    padding-right: 1rem;
+    padding: .5rem;
+    margin: 0px;
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    flex-direction: row;
+    margin: auto;
+    justify-content: space-evenly;
+    flex-direction: row;    
   }
   
   #ham-menu-items a{
     color: #FFFFFF;
+  }
+  
+  #ham-menu-items .bluetext{
+    color: #01303F;
   }
   
   header {
