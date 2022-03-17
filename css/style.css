@@ -72,7 +72,8 @@ body {
   width: auto;
 }
 
-#hamburger, #ham-menu-items {
+#hamburger,
+#ham-menu-items {
   display: none;
 }
 
@@ -88,7 +89,8 @@ body {
   padding: .5rem 0 .5rem .5rem;
 }
 
-.fa-puzzle-piece, .fa-align-justify {
+.fa-puzzle-piece,
+.fa-align-justify {
   font-size: 1.5rem;
 }
 
@@ -249,7 +251,9 @@ header {
   font-size: 2rem;
 }
 
-.backtotop, .downarrow, .desktop-only {
+.backtotop,
+.downarrow,
+.desktop-only {
   display: none;
 }
 
@@ -262,7 +266,9 @@ main h2 {
   font-size: 1.5rem;
 }
 
-.aboutme, .projects, .contact {
+.aboutme,
+.projects,
+.contact {
   scroll-margin-top: 10rem;
 }
 
@@ -276,7 +282,8 @@ main h2 {
     display: block;
   }
 
-  #hamnav label, #hamburger {
+  #hamnav label,
+  #hamburger {
     display: none;
   }
 
@@ -452,7 +459,9 @@ main h2 {
     margin: 2rem auto;
   }
   
-  .aboutme, .projects, .contact {
+  .aboutme,
+  .projects,
+  .contact {
     scroll-margin-top: 6rem;
   }
   
@@ -466,7 +475,7 @@ main h2 {
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
-    animation: typing 3.5s steps(50, end), blink-caret 1s step-end;
+    animation: typing 3.5s steps(50,end), blink-caret 1s step-end;
   }
 
   @keyframes typing {
