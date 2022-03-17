@@ -1,19 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
 
 * {
   box-sizing: border-box;
+  font-size: 20px;
 }
 
 hr {
   border: 1px solid #DBE1E1;
   width: 20%;
-  margin: 2rem auto;
+  margin: auto;
 }
 
 a {
-  color: white;
+  color: #FFFFFF;
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  text-align: center;
 }
 
 .bluetext {
@@ -23,38 +30,75 @@ a {
 body {
   background: linear-gradient(90deg, #01303F  80%, #DBE1E1 20%);
   color: #172A1F;
-  font-family: 'Smooch Sans', sans-serif;
-	font-size: 15px;
+  font-family: 'Red Hat Display', sans-serif;
   margin: 0 auto;
 }
 
-nav {
+.topbar {
   display: flex;
-  justify-content: flex-start;
-  margin-bottom: .5rem;
-  border-bottom: .25rem solid #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background: linear-gradient(90deg, #01303F  80%, #DBE1E1 20%);
+  margin: 0 auto;
 }
 
-.menu {
+#ham-menu-items a {
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
   color: #FFFFFF;
-  font-size: 2rem;
 }
 
-.logo {
-  margin: auto;
+#hamnav label {
+  display: inline-block;
+  padding-right: .5rem;
   color: #FFFFFF;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
-.Navbar {
+#hamnav ul {
+  padding: 0;
+  width: 100%;
+}
+
+#hamnav input:checked ~ #ham-menu-items {
+  display: block;
+  margin: 0;
+  color: #000000;
+  padding: 0;
+  width: auto;
+}
+
+#hamburger, #ham-menu-items {
   display: none;
 }
 
+#hamnav {
+  text-align: right;
+  width: 100%;
+  padding: .5rem 0rem .25rem .5rem;
+}
+
+.logo {
+  color: #FFFFFF;
+  font-size: 1rem;
+  padding: .5rem 0 .5rem .5rem;
+}
+
+.fa-puzzle-piece, .fa-align-justify {
+  font-size: 1.5rem;
+}
+
 img {
-  max-height: 80%;
+  height: auto;
+  width: 100%;
   border-radius: 50%;
   border: .25rem solid #01303F;
   box-shadow: 1px 5px #01303F;
+  margin-bottom: 2rem;
 }
 
 .textbox {
@@ -62,15 +106,18 @@ img {
   background-color: #88B3B3;
   box-shadow: 5px 10px #000000;
   text-align: center;
-  margin-bottom: 5px;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  padding: .5rem;
 }
 
 header {
   display: grid;
   grid-template-columns: repeat(6,1fr);
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   justify-items: center;
+  padding-top: 5rem;
+  height: 80vh;
+  margin-bottom: 7rem;
 }
 
 .avatar {
@@ -95,6 +142,7 @@ header {
   display: grid;
   grid-template-columns: repeat(6,1fr);
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .aboutme h2 {
@@ -108,7 +156,7 @@ header {
   grid-row: 2;
 }
 
-.aboutme p {
+.aboutme .textbox {
   grid-column: 2/6;
   grid-row: 3;
 }
@@ -133,7 +181,7 @@ header {
 .detail {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .icons {
@@ -141,8 +189,8 @@ header {
   width: 100%;
   justify-content: space-evenly;
   flex-direction: row;
-  font-size: 1rem;
-  padding: .5rem 0;
+  font-size: 1.25rem;
+  padding: 1rem 0;
 }
 
 .project1 .detail {
@@ -172,8 +220,8 @@ header {
   grid-template-columns: repeat(6,1fr);
   text-align: center;
   margin-bottom: 50px;
-  
 }
+
 .project3 .project3image {
   grid-column: 2/6;
   grid-row: 2;
@@ -184,22 +232,14 @@ header {
   grid-row: 3/4;
 }
 
-.contact {
-  background-color: #88B3B3;
-  display: flex;
-  flex-direction: column;
-  justify-items: space-evenly;
-  gap: 1rem;
-}
-
 .contact h2 {
-  margin: auto;
+  margin: 1rem 0;
   padding-top: .5rem;
 }
 
 .contact p {
   text-align: center;
-  margin: auto;
+  margin: 1rem auto;
   width: 80%;
 }
 
@@ -209,50 +249,72 @@ header {
   font-size: 2rem;
 }
 
-.backtotop {
+.backtotop, .downarrow, .desktop-only{
   display: none;
 }
 
-.downarrow {
-  display: none;
+.detail h3, .detail p {
+  padding: .5rem 0;
+  margin: 0;
+}
+
+main h2 {
+  font-size: 1.5rem;
+}
+
+.aboutme, .projects, .contact {
+  scroll-margin-top: 10rem;
 }
 
 @media only screen and (min-width: 600px) {
   
-  .menu {
+  *{
+    font-size: 28px;
+  }
+  
+  .desktop-only {
+    display: block;
+  }
+
+  #hamnav label, #hamburger {
     display: none;
   }
 
-  li {
-    list-style: none;
-  }
-
-  a {
-    color: #FFFFFF;
-    font-weight: bold;
-    text-decoration: none;
+  .topbar {
+    align-items: center;
+    border-bottom: 1px solid #FFFFFF;
+    padding: 0;
   }
   
-  nav {
+  #ham-menu-items {
+    margin: 0px;
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    z-index: 2;
-    background: linear-gradient(90deg, #01303F  80%, #DBE1E1 20%);
-  }
-
-  .Navbar {
-    display: flex;
-    justify-content: space-evenly;
-    width: 48%;
-    padding: 0px;
+    margin: auto;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0.5rem; 
   }
   
-  .logo {
-    width: 52%;
-    padding-left: 1rem;
+  #ham-menu-items .bluetext {
+    color: #01303F;
+  }
+  
+  #hamnav {
+    padding: 0;
+  }
+  
+  .textbox {
+    font-size: 1.7rem;
+  }
+
+  .textbox h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .logo{
+    width: 100%;
   }
   
   header {
@@ -261,22 +323,19 @@ header {
     padding: 20vh 0;
     width: 100%;
     margin: auto;
+    height: auto;
   }
   
   .avatar {
-    grid-column: 7/10;
-    grid-row: 2/6;
+    grid-column: 7/11;
+    grid-row: 2/4;
     height: auto;
-    width:100%;
-    margin: auto;
-   
+    width: 70%;
   }
   
   .welcome {
     grid-column: 2/6;
-    grid-row: 3;
-    width: 100%;
-    margin: auto;
+    grid-row: 2;
   }
 
   .downarrow {
@@ -288,6 +347,8 @@ header {
   .aboutme {
     grid-template-columns: repeat(10,1fr);
     align-items: stretch;
+    margin-bottom: 10rem;
+    height: auto;
   }
 
   .aboutme h2 {
@@ -299,12 +360,9 @@ header {
     grid-row: 2/5;
   }
 
-  .aboutme p {
+  .aboutme .textbox {
     grid-column: 6/10;
     grid-row: 3/4;
-    border-radius: 8px;
-    padding: 2rem;
-    margin: 0;
   }
 
   .project1 {
@@ -324,23 +382,14 @@ header {
     margin: 0;
   }
 
-  h3 {
-    margin: .5rem;
-  }
-
-  p {
-    margin: .5rem;
-  }
-
   .project2 {
     grid-template-columns: repeat(10,1fr);
     align-items: stretch;
   }
-
+  
   .project2 .project2image {
     grid-column: 2/5;
     grid-row: 2/5;
-    margin-right: 1rem;
   }
 
   .project2 .detail {
@@ -361,8 +410,6 @@ header {
   .project3 .detail {
     grid-column: 2/6;
     grid-row: 3/4;
-    border-radius: 8px;
-    margin: 0;
   }
 
   .imgleft img {
@@ -371,8 +418,7 @@ header {
     box-shadow: 1px 5px #BDBDBD;
     margin-right: 1rem;
     height: auto;
-    min-height: 80%;
-    width: 100%;
+    width: 80%;
   }
   
   .imgright img {
@@ -381,51 +427,57 @@ header {
     box-shadow: 1px 5px #01303F;
     margin-left: 1rem;
     height: auto;
-    min-height: 80%;
-    width: 100%;
+    width: 80%;
   }
-
-   .welcome h2 {
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation: typing 4.5s steps(50, end), blink-caret .75s step-end;
-  }
-
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 90% }
-  }
-
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    70% { border-color: orange; }
-  }
-
-  li:hover {
+  
+  .scalehover:hover {
     transform: scale(1.2);
   }
 
-  img:hover {
-    transform: scale(1.4);
-  }
-
   .fa-brands:hover {
-    transform: scale(1.4);
+    transform: scale(1.3);
   }
 
   .fa-solid:hover {
-    transform: scale(1.4);
+    transform: scale(1.3);
+  }
+  
+  .downarrow .fa-solid {
+    font-size: 6rem;
   }
 
   .backtotop {
     display: flex;
     margin: 20px auto;
   }
-}  
-
-@media only screen and (max-width: 800px) {
-  body{
-    font-size: .75rem;
+  
+  .aboutme, .projects, .contact {
+    scroll-margin-top: 6rem;
   }
+  
+  .backtotop:hover {
+    transform: scale(1.1)
+  }
+ 
+@media only screen and (min-width: 1100px) {
+  .welcome h2 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(50, end), blink-caret 1s step-end;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  
+  *{
+    font-size: 22px;
+  }
+}
+
