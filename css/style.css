@@ -249,7 +249,7 @@ header {
   font-size: 2rem;
 }
 
-.backtotop, .downarrow, .desktop-only{
+.backtotop, .downarrow, .desktop-only {
   display: none;
 }
 
@@ -268,7 +268,7 @@ main h2 {
 
 @media only screen and (min-width: 600px) {
   
-  *{
+  * {
     font-size: 28px;
   }
   
@@ -448,7 +448,8 @@ main h2 {
 
   .backtotop {
     display: flex;
-    margin: 20px auto;
+    font-size: 1rem;
+    margin: 2rem auto;
   }
   
   .aboutme, .projects, .contact {
