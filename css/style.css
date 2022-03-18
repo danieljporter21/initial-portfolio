@@ -475,7 +475,7 @@ main h2 {
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
-    animation: typing 3s steps(500, end);
+    animation: typing 3s steps(50, end);
   }
 
   @keyframes typing {
